@@ -15,7 +15,7 @@ body {
 .list {
   list-style: none;
 }
-li > a {
+.list a {
   text-decoration: none;
 }
 /* цвет основного текста #212121
@@ -57,14 +57,18 @@ li > a {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
-.site-nav .link,
-.contacts-header .link {
+.site-nav .link {
   color: var(--title-text-color);
+}
+.contacts-header .link {
+  color: var(--primari-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts-header .link:hover,
-.contacts-header .link:focus {
+.contacts-header .link:focus,
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 .site-nav .link.current {
@@ -81,6 +85,7 @@ li > a {
   text-transform: uppercase;
 }
 .hero-button {
+  cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -106,14 +111,24 @@ li > a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
 }
 .command-list .text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
+  /* text-align: center; */
   letter-spacing: 0.03em;
+}
+.filter-button {
+  cursor: pointer;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 .filter-list .title {
   color: var(--title-text-color);
@@ -123,7 +138,31 @@ li > a {
   letter-spacing: 0.06em;
 }
 .filter-list .text {
+  font-weight: normal;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+}
+/* footer */
+.footer {
+  background-color: #2f303a;
+}
+.address-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-text {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer .logo {
+  color: var(--primary-white-color);
 }
